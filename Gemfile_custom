@@ -24,3 +24,6 @@
 ###### Other gems ######
 #
 # Add your custom gem dependencies here
+
+gem "ed25519"
+gem "bcrypt_pbkdf"

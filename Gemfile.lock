@@ -98,6 +98,7 @@ GEM
       execjs (~> 2)
     base64 (0.2.0)
     bcrypt (3.1.20)
+    bcrypt_pbkdf (1.1.1)
     better_html (2.1.1)
       actionview (>= 6.0)
       activesupport (>= 6.0)
@@ -196,6 +197,7 @@ GEM
       devise (>= 4.3.0)
     diff-lcs (1.6.0)
     docile (1.4.0)
+    ed25519 (1.4.0)
     email_spec (2.3.0)
       htmlentities (~> 4.3.3)
       launchy (>= 2.1, < 4.0)
@@ -723,6 +725,7 @@ DEPENDENCIES
   ancestry (~> 4.3.3)
   audited (~> 5.7.0)
   autoprefixer-rails (~> 10.4.19)
+  bcrypt_pbkdf
   bing_translator (~> 6.2.0)
   cancancan (~> 3.6.1)
   capistrano (~> 3.19.2)
@@ -743,6 +746,7 @@ DEPENDENCIES
   delayed_job_active_record (~> 4.1.10)
   devise (~> 4.9.4)
   devise-security (~> 0.18.0)
+  ed25519
   email_spec (~> 2.3.0)
   erb_lint (~> 0.9.0)
   exiftool_vendored (~> 12.97.0)
