@@ -24,4 +24,4 @@ jobs:
       - name: Fetch base branch
         run: git fetch origin ${{ github.event.pull_request.base.ref }}:${{ github.event.pull_request.base.ref }}
       - name: Run pronto
-        run: bundle exec pronto run -f text -c ${{ github.event.pull_request.base.ref }}
+        run: bundle exec pronto run -f text --exit-code -c ${{ github.event.pull_request.base.ref }}
