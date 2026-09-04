@@ -1,0 +1,123 @@
+meta:
+  exported_at: "2026-06-15T10:00:00Z"
+  source_host: fixture-host
+  since: "2026-06-01"
+  default_locale: en
+  locales:
+    - en
+    - es
+
+blobs:
+  - key: vpw5ynbpkgjomwwqgiebq3q3l9rn
+    filename: logo_header-260x80.png
+    content_type: image/png
+    byte_size: 3655
+    checksum: UXLDKIRVqyaVxVMjVorJqw==
+    metadata:
+      analyzed: true
+      identified: true
+      width: 260
+      height: 80
+  - key: 9i3orjwsnlfwc6f4aq1gersqpoev
+    filename: clippy.jpg
+    content_type: image/jpeg
+    byte_size: 12394
+    checksum: 298VXnIHChSp5DJCwKnSiQ==
+    metadata: {}
+  - key: e4eaal50v6xdt8litjamnenmjkal
+    filename: empty.pdf
+    content_type: application/pdf
+    byte_size: 1886
+    checksum: TzTeFSS5Z76LR44bCMei6g==
+    metadata: {}
+  - key: v2fgl91pnwsnimkkvmeef137w21o
+    filename: clippy.png
+    content_type: image/png
+    byte_size: 67983
+    checksum: iLXj7SPw8ZQHSKEKpezKSg==
+    metadata:
+      analyzed: true
+      identified: true
+      width: 475
+      height: 475
+
+ckeditor_pictures:
+  - blob_key: v2fgl91pnwsnimkkvmeef137w21o
+    data_file_name: clippy.png
+    data_content_type: image/png
+    data_file_size: 67983
+    width: 475
+    height: 475
+
+site_images:
+  - name: logo_header
+    blob_key: vpw5ynbpkgjomwwqgiebq3q3l9rn
+
+documents:
+  - title: Imported document
+    blob_key: e4eaal50v6xdt8litjamnenmjkal
+
+pages:
+  - slug: imported-page
+    status: published
+    more_info_flag: false
+    print_content_flag: false
+    locale:
+    translations:
+      en:
+        title: Imported page
+        subtitle: An imported subtitle
+        content: '<p>See <img src="consul-seed://blob/v2fgl91pnwsnimkkvmeef137w21o?variant=eyJmb3JtYXQiOiJwbmciLCJyZXNpemUiOiI4MDA-In0"> and <a href="consul-seed://blob/e4eaal50v6xdt8litjamnenmjkal?disposition=attachment">the PDF</a></p>'
+      es:
+        title: Página importada
+        subtitle: Un subtítulo importado
+        content: '<p>Ver <img src="consul-seed://blob/v2fgl91pnwsnimkkvmeef137w21o"></p>'
+
+content_blocks:
+  - name: footer
+    locale: en
+    body: '<p>Footer body</p>'
+  - name: footer
+    locale: xx
+    body: '<p>Body in a locale that is not enabled on the target</p>'
+
+i18n_contents:
+  - key: imported.section.title
+    translations:
+      en: Imported English value
+      es: Valor importado en español
+
+cards:
+  - header: true
+    columns: 4
+    order: 1
+    link_url: /imported
+    cardable:
+    image:
+      blob_key: 9i3orjwsnlfwc6f4aq1gersqpoev
+      title: Imported card image
+    translations:
+      en:
+        label: Imported label
+        title: Imported card
+        description: '<p>Card description with <img src="consul-seed://blob/v2fgl91pnwsnimkkvmeef137w21o"></p>'
+        link_text: Read more
+      es:
+        label: Etiqueta importada
+        title: Tarjeta importada
+        description: '<p>Descripción con <img src="consul-seed://blob/v2fgl91pnwsnimkkvmeef137w21o"></p>'
+        link_text: Leer más
+
+budget_extensions:
+  - budget:
+      slug: nonexistent-budget
+      name: Nonexistent Budget
+    stats_override: true
+    results_extension: false
+    translations:
+      en:
+        stats_override_content: '<p>Stats override content</p>'
+        results_extension_content:
+      es:
+        stats_override_content: '<p>Contenido de estadísticas</p>'
+        results_extension_content:
