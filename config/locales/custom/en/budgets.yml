@@ -37,3 +37,6 @@ en:
       ammount: "Ammount"
       status: "Status"
       download_csv: "Download executions"
+    finished_budgets:
+      2015_2016_title: "Budgets 2015/2016"
+      2015_2016_link: "/budget-2015-2016"

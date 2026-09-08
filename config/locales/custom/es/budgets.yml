@@ -37,3 +37,6 @@ es:
       ammount: "Presupuesto"
       status: "Fase"
       download_csv: "Descargar seguimiento"
+    finished_budgets:
+      2015_2016_title: "Presupuestos Participativos 2015/2016"
+      2015_2016_link: "/budget-2015-2016"
