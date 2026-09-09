@@ -1,0 +1,29 @@
+<div id="<%= dom_id(card) %>"
+     class="card small-12 medium-<%= card.columns %> column margin-bottom end">
+  <%= link_to card.link_url do %>
+    <% if card.label == "crea" %>
+      <figure class="figure-card">
+        <%= image_tag(image_path_for("columns/crea_#{locale}.jpg"), alt: card.title) %>
+      </figure>
+    <% elsif card.label == "elige" %>
+      <figure class="figure-card">
+        <%= image_tag(image_path_for("columns/elige_#{locale}.jpg"), alt: card.title) %>
+      </figure>
+    <% elsif card.label == "vota" %>
+      <figure class="figure-card">
+        <%= image_tag(image_path_for("columns/vota_#{locale}.jpg"), alt: card.title) %>
+      </figure>
+    <% else %>
+      <figure class="figure-card">
+        <% if card.image.present? %>
+          <%= image_tag(card.image.variant(:large), alt: card.image.title) %>
+        <% end %>
+      </figure>
+    <% end %>
+    <div class="card-body">
+      <h2 class="card-title"><%= card.title %></h2>
+      <p class="description"><%= card.description %></p>
+      <p><%= card.link_text %></p>
+    </div>
+  <% end %>
+</div>
