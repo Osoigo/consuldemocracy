@@ -37,3 +37,6 @@ val:
       ammount: "Pressupost"
       status: "Fase"
       download_csv: "Descarregar seguiment"
+    finished_budgets:
+      2015_2016_title: "Pressupostos Participatius 2015/2016"
+      2015_2016_link: "/budget-2015-2016"
