@@ -40,7 +40,7 @@ async def migrate(id_maps, migration_stats):
                 stats["unsupported_actionable_type"].add(old_activity.actionable_type)
                 continue
 
-            user_id = id_maps["users"].get(old_activity.user_id)
+            user_id = id_maps["users"].get(str(old_activity.user_id))
             if user_id is None:
                 stats["missing_users"].add(old_activity.user_id)
                 continue
