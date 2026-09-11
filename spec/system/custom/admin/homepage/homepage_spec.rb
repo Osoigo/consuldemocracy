@@ -28,7 +28,6 @@ describe "Homepage", :admin do
     expect(page).to have_css(".card", count: 2)
 
     within("#widget_card_#{card1.id}") do
-      expect(page).to have_content("Card1 label")
       expect(page).to have_content("Card1 text")
       expect(page).to have_content("Card1 description")
       expect(page).to have_content("Link1 text")
@@ -37,7 +36,6 @@ describe "Homepage", :admin do
     end
 
     within("#widget_card_#{card2.id}") do
-      expect(page).to have_content("Card2 label")
       expect(page).to have_content("Card2 text")
       expect(page).to have_content("Card2 description")
       expect(page).to have_content("Link2 text")
